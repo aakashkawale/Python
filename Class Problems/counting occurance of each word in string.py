@@ -1,8 +1,12 @@
 a=str(input("Enter Your String : "))
 a=a.split(" ")
-b=len(a)
-for i in range(0, b) :
+d1 = dict()
+for i in range(0,len(a) ) :
     c=a[i]
     x=a.count(c)
     i+=1
-    print(f"count of {c} is {x}")
+    key=c
+    value=x
+    d1[key]=value
+
+print(d1)
